@@ -3,7 +3,6 @@ export default function Header() {
     <header className="header">
       <div className="header-inner">
         <div className="logo-area">
-          <div className="logo-icon">🎓</div>
           <div>
             <h1>Student Scoreboard by Aditya Saini</h1>
             <div className="header-sub">Web Development II · Lab Assignment 3 · sem2 </div>

@@ -28,7 +28,7 @@ export default function App() {
   function handleDelete(id) {
     if (!window.confirm("Delete this student?")) return;
     const s = students.find(x => x.id === id);
-    persist(students.filter(x => x.id !== id));
+    persist(students.filter(x =>   x.id !== id));
     addToast(`${s?.name || "Student"} deleted`, "error");
   }
 
@@ -49,21 +49,18 @@ export default function App() {
         {/* Stats */}
         <div className="stats-grid">
           <div className="stat-card">
-            <div className="stat-icon blue">👥</div>
             <div>
               <div className="stat-label">Total</div>
               <div className="stat-num blue">{students.length}</div>
             </div>
           </div>
           <div className="stat-card">
-            <div className="stat-icon green">✅</div>
             <div>
               <div className="stat-label">Passed</div>
               <div className="stat-num green">{pass}</div>
             </div>
           </div>
           <div className="stat-card">
-            <div className="stat-icon red">❌</div>
             <div>
               <div className="stat-label">Failed</div>
               <div className="stat-num red">{fail}</div>

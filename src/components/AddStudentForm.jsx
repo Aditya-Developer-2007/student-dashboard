@@ -62,7 +62,7 @@ export default function AddStudentForm({ onAdd }) {
           <button className="btn-primary" onClick={submit}>＋ Add</button>
         </div>
 
-        {err && <div className="form-error">⚠️ {err}</div>}
+        {err && <div className="form-error"> {err}</div>}
       </div>
     </div>
   );

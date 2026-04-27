@@ -55,7 +55,7 @@ export default function StudentTable({ students, onUpdate, onDelete, onClearAll 
   return (
     <div className="card">
       <div className="card-head">
-        <div className="card-head-icon">📋</div>
+        <div className="card-head-icon"></div>
         <span className="card-title">Student Records</span>
         <span className="card-count">{students.length} student{students.length !== 1 ? "s" : ""}</span>
         {students.length > 0 && (
@@ -65,7 +65,7 @@ export default function StudentTable({ students, onUpdate, onDelete, onClearAll 
 
       {students.length === 0 ? (
         <div className="empty">
-          <div className="empty-icon">🎒</div>
+          <div className="empty-icon"></div>
           <div className="empty-text">No students enrolled yet</div>
           <div className="empty-sub">Use the form above to add your first student</div>
         </div>
